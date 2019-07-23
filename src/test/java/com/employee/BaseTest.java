@@ -7,10 +7,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Hashtable;
+
 import java.util.Properties;
 
-import static io.restassured.RestAssured.given;
 
 import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -48,6 +47,7 @@ public class BaseTest {
 
 	public static String readFile(String filename) {
 		String result = "";
+		
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(filename));
 			StringBuilder sb = new StringBuilder();
@@ -84,12 +84,21 @@ public class BaseTest {
 		return jsonResponse;
 	}
 	
+	
 	public HttpResponse<String> getEmployee() throws ParseException, UnirestException {
 		
 		HttpResponse<String>  jsonResponse= Unirest.get(getProperties().getProperty("baseUrl") + "/employees/2")
 				  .header("Content-Type", "application/json")
 				  .header("User-Agent", "PostmanRuntime/7.15.0")
 				  .header("Accept", "*/*").asString();
+               return jsonResponse;
+		}
+public HttpResponse<JsonNode> getEmployeeCount() throws ParseException, UnirestException {
+		
+		HttpResponse<JsonNode>  jsonResponse= Unirest.get(getProperties().getProperty("baseUrl") + "/employees")
+				  .header("Content-Type", "application/json")
+				  .header("User-Agent", "PostmanRuntime/7.15.0")
+				  .header("Accept", "*/*").asJson();
                return jsonResponse;
 		}
 	

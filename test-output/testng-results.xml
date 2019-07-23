@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="540" started-at="2019-07-12T07:06:38Z" finished-at="2019-07-12T07:06:38Z">
+  <suite name="Default suite" duration-ms="508" started-at="2019-07-23T08:45:49Z" finished-at="2019-07-23T08:45:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="540" started-at="2019-07-12T07:06:38Z" finished-at="2019-07-12T07:06:38Z">
+    <test name="Default test" duration-ms="508" started-at="2019-07-23T08:45:49Z" finished-at="2019-07-23T08:45:50Z">
       <class name="com.employee.EmployeeManagementTest">
-        <test-method status="PASS" signature="verifyEmployeeCreation()[pri:0, instance:com.employee.EmployeeManagementTest@28d25987]" name="verifyEmployeeCreation" duration-ms="414" started-at="2019-07-12T07:06:38Z" finished-at="2019-07-12T07:06:38Z">
+        <test-method status="PASS" signature="verifyEmployeeCreation()[pri:0, instance:com.employee.EmployeeManagementTest@28d25987]" name="verifyEmployeeCreation" duration-ms="348" started-at="2019-07-23T08:45:49Z" finished-at="2019-07-23T08:45:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEmployeeCreation -->
-        <test-method status="PASS" signature="updateEmployeeAndValidate()[pri:1, instance:com.employee.EmployeeManagementTest@28d25987]" name="updateEmployeeAndValidate" duration-ms="59" started-at="2019-07-12T07:06:38Z" finished-at="2019-07-12T07:06:38Z">
+        <test-method status="PASS" signature="checkEmployeeCreationCount()[pri:1, instance:com.employee.EmployeeManagementTest@28d25987]" name="checkEmployeeCreationCount" duration-ms="21" started-at="2019-07-23T08:45:50Z" finished-at="2019-07-23T08:45:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkEmployeeCreationCount -->
+        <test-method status="PASS" signature="checkLatestEmployeeidIsnotNull()[pri:2, instance:com.employee.EmployeeManagementTest@28d25987]" name="checkLatestEmployeeidIsnotNull" duration-ms="9" started-at="2019-07-23T08:45:50Z" finished-at="2019-07-23T08:45:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLatestEmployeeidIsnotNull -->
+        <test-method status="PASS" signature="updateEmployeeAndValidate()[pri:3, instance:com.employee.EmployeeManagementTest@28d25987]" name="updateEmployeeAndValidate" duration-ms="65" started-at="2019-07-23T08:45:50Z" finished-at="2019-07-23T08:45:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateEmployeeAndValidate -->
-        <test-method status="PASS" signature="deleteEmployeeAndValidate()[pri:2, instance:com.employee.EmployeeManagementTest@28d25987]" name="deleteEmployeeAndValidate" duration-ms="29" started-at="2019-07-12T07:06:38Z" finished-at="2019-07-12T07:06:38Z">
+        <test-method status="PASS" signature="deleteEmployeeAndValidate()[pri:4, instance:com.employee.EmployeeManagementTest@28d25987]" name="deleteEmployeeAndValidate" duration-ms="34" started-at="2019-07-23T08:45:50Z" finished-at="2019-07-23T08:45:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteEmployeeAndValidate -->

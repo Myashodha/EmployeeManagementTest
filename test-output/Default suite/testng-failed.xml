@@ -5,7 +5,7 @@
     <classes>
       <class name="com.employee.EmployeeManagementTest">
         <methods>
-          <include name="updateEmployeeAndValidate"/>
+          <include name="checkLatestEmployeeidIsnotNull"/>
         </methods>
       </class> <!-- com.employee.EmployeeManagementTest -->
     </classes>
